@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    
+    <!--Included BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Included BootStrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Included Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Included external style.css Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid" id="mainheader">
+        <!-- The `<div class="row header" id="tab1">` section is creating a header section for the
+        webpage. It contains the logo, search bar, shopping cart button, and account dropdown menu. -->
+        <div class="row header" id="tab1">
+            <div class="col">
+                <div class="header-logo">
+                    <img src="images/Logo Image.jpg" alt="logo-image">
+                    <h1 class="header-heading ms-3">Laxmi's Plaza of Fashion</h1>
+                </div>
+            </div>
+            <div class="col-lg-5" id="searchtab">
+                <div class="search input-group">
+                    <input class="w-75" type="text" placeholder="Search" id="searchbox">
+                    <button class="input-group-text" type="button" id="searchbutton"><i class="fa fa-search"
+                            style="font-size:20px;"></i></button>
+                </div>
+            </div>
+            <div class="col-lg-2" id="cartlogin">
+                <div class="account">
+                    <div class="cartbtn">
+                        <a href="cart.html">
+                            <button class="btn btn-sucess position-relative m-2" type="button" id="cartbutton"><i
+                                class='fa fa-cart-plus'></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill;" id="cartvalue"
+                                style="background-color: #fc8f77;">1</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="dropdown m-3">
+                        <a class="dropdown-item" id="loginbutton" href="Loginpage.html">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The `<div class="row navbar" id="tab2">` section is creating a navigation bar for the
+        webpage. It contains a responsive navbar with a toggle button for smaller screens. The
+        navigation bar includes a list of links for different sections of the website, such as Home,
+        All Product, Women, Men, Kids, About, and Contact. The Women and Men links have dropdown
+        menus with additional options. -->
+        <div class="row navbar" id="tab2">
+            <nav class="navbar navbar-expand-sm">
+                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenavbar"
+                    aria-controls="collapsenavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsenavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">All Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Women</a>
+                            <ul class="dropdown-menu">
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="womencollection.html">All product</a>
+                                </li>
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="womencollection.html#womendresses">Dresses</a>
+                                </li>
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="womencollection.html#womendressmaterial">Dress Material</a>
+                                </li>
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="womencollection.html#Westernwomen">Western Dresses</a>
+                                </li>
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="womencollection.html#skirts">Skirts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Men</a>
+                            <ul class="dropdown-menu">
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="mencollection.html">All product</a>
+                                </li>
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="mencollection.html#Shirts">Shirts</a>
+                                </li>
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="mencollection.html#Pants">Pants</a>
+                                </li>
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="mencollection.html#Suits">Suits</a>
+                                </li>
+                                <li class="py-1">
+                                    <a class="dropdown-item" href="mencollection.html#Hoodies">Hoodies</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kidcollection.html">Kids</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

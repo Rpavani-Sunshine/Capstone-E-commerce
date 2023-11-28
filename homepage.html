@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--Included JQuery Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--Included BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Included BootStrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Included Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include style.css Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Included external script file -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="headertab"><!--Header.html content will load --></div>
+        <div class="row" id="maincontent">
+            <div class="coverpage mb-5" id="coverimg">
+                <div id="logo_slogan">
+                    <img src="images/Logo Image.jpg" alt="logo">
+                    <h3>Discover Your Attractive Potential at Laxmi's Plaza of Fashion.</h3>
+                    <h5>Turn Heads, Ignite Envy - Shop with Us for Irresistible Looks!</h5>
+                </div>
+            </div>
+            <div class="feature-product mb-5">
+                <div class="carousel slide bg-light" id="products_carousel" data-bs-ride="carousel">
+                    <!-- below button creating 3 buttons in bottom which indicate no. of slide and which slide is active -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#products_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: black;"></button>
+                        <button type="button" data-bs-target="#products_carousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: black;"></button>
+                        <button type="button" data-bs-target="#products_carousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: black;"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <h1 class="carousel-heading" style="text-align: center;">Freatured Products</h1>
+                        <!-- The below code is creating a carousel item that displays a set of cards.
+                        Each card represents a product with an image, title, description, and price.
+                        The carousel item is set to active, indicating that it is the currently
+                        displayed item in the carousel. -->
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.5S_M8TC84THWx9AqB_L2rwHaHa?pid=ImgDet&w=199&h=199&c=7&dpr=1.3" alt="Western_dresses">
+                                        <h5 class="card-title pt-2">MUQGEW</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">MUQGEW New Arrival Spring New Casual Women Dress Fit and Flare</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 1529</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.imHWKJcK9looSaNHdL0ZfgHaI3?w=202&h=242&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Dresses">
+                                        <h5 class="card-title pt-2">BIBA</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Women's Simple Multi Colour Salwar Kameez With Dupatta</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 1439</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.mpxnA8I_bRaNrvSouni1_wHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Skirt">
+                                        <h5 class="card-title pt-2">GENERIC</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Women Long Gypsy High Waist Maxi Skirt Stretch Full Length Skirts</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 699</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/814YG7DFOxL. _AC_UL480_FMwebp_QL65_.jpg" alt="Dress_Material">
+                                        <h5 class="card-title pt-2">PANDADI</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Pandadi Women's Chanderi Silk Salwar Suit Dress Material</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 700</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Slide of Carousel content Men collection -->
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/586700/03/mod01/fnd/IND/fmt/png/Big-Logo-Full-Zip-Regular-Fit-Men's-Hoodie" alt="Hoodie">
+                                        <h5 class="card-title pt-2">PUMA</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Men's PUMA Big LOGO Full-Zip Regular Fit Hoodie in Gray</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 2089</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.sy4n7rgSvz1ET-e5X0ZKcgHaHa?w=220&h=220&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Shirt">
+                                        <h5 class="card-title pt-2">BIBA</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Men's Simple Cotton Printed Shirts</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 1139</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.ad0_m0CikMsXLVa_liyiuAHaJ4?w=186&h=248&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Pant">
+                                        <h5 class="card-title pt-2">DAVID</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">David Taylor Men's Formal Pants Marroon Colour</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 1159</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.0NBL9ydT-av0phtn-HI5egHaJH?w=186&h=229&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Suits">
+                                        <h5 class="card-title pt-2">PANDADI</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Pandadi Men's Wedding Suits</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 7700</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Third Slide of Carousel content kids collection -->
+                        <div class="carousel-item">  
+                            <div class="cards-wrapper">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.xBsz4buUBKrA2lKQa_u1-AHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Kids-dress">
+                                        <h5 class="card-title pt-2">MUQGEW</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Summer Kids Dresses for Girls Casual Embroidert Flowers Princess Dress</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 1529</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.Yz8z2PN1kHwy0mb6GUtSOgHaJu?w=186&h=244&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Long-frock">
+                                        <h5 class="card-title pt-2">BIBA</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">New Toddler Girls Pricess Party Wedding Bridesmaid Tutu Dress</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 1439</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.tRyXg87M_e6VAgogaPfBwgHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="short-frock">
+                                        <h5 class="card-title pt-2">GENERIC</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">New High Quality girls summer dress</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 699</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img class="card-img-top" src="https://th.bing.com/th/id/OIP.RDFSBVB-rWWyURIBNiMPYQHaHa?w=200&h=200&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="boy-dress">
+                                        <h5 class="card-title pt-2">PANDADI</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">kids dresses for boys baby boy clothes 4t set Children plaid Suit</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="card-footer"><span>₹</span> 1599</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Below code create previous button in icon '<' form, after click it will move the slide toward previous slide -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#products_carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+                    </button>
+
+                    <!-- Below code create next button in icon '>' form, after click it will move the slide to the next slide -->
+                    <button class="carousel-control-next" type="button" data-bs-target="#products_carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" style="background-color: black;"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="footertab"><!--Footer.html content will load--></div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Included JQuery Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--Included BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Included BootStrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Included Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include style.css Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Included external script file -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="contact_page">
+        <div class="row" id="headertab"><!--Header.html content will load --></div>
+        <div class="container mt-5 mb-5 p-2" id="logindiv">
+            <div class="form p-5">
+                <div id="accountbtn" style="text-align: right;">
+                    <button class="btn m-2" type="button" onclick="displayloginform()">Login</button>
+                    <button class="btn m-2" type="button" onclick="displaysigninform()">Register</button>
+                </div>
+                <!-- Login form Section -->
+                <div id="login"> 
+                    <form class="accountform" id="loginform">
+                        <h1>Login</h1>
+                        <div class="formdata my-3">
+                            <label for="userid">User_Id : </label>
+                            <input class="form-control my-2" type="text" placeholder="Enter Userid" name="userid">
+                        </div>
+                        <div class="formdata my-3">
+                            <label for="userid">Password : </label>
+                            <input class="form-control my-2" type="password" placeholder="Enter password" name="password">
+                        </div>
+                        <div class="formdata my-3">
+                            <input class="btn btn-secondary btn-lg mt-5" type="submit" onclick="loginsubmit(this.form)" value="Login">
+                        </div>
+                    </form>
+                </div>
+                <!-- SignIn form Section -->
+                <div id="signin">
+                    <form class="accountform"  id="signinform">
+                        <h1>Register Your Account</h1>
+                        <div class="formdata my-3">
+                            <label for="userid">User Name :</label>
+                            <input class="form-control my-2" type="text" placeholder="Create User_id" name="userid">
+                        </div>
+                        <div class="formdata my-3">
+                            <label for="phone_no">Contact No. :</label>
+                            <input class="form-control my-2" type="tel" placeholder="Enter Contact No." name="phone_no">
+                        </div>
+                        <div class="formdata my-3">
+                            <label for="password">Password :</label>
+                            <input class="form-control my-2" type="password" placeholder="Create 6 digits  password" name="password">
+                        </div>
+                        <div class="formdata my-3">
+                            <label for="mailid">E-mail Id :</label>
+                            <input class="form-control my-2" type="email" placeholder="Enter your mail id" name="mailid">
+                        </div>
+                        <div class="formdata mt-5">
+                            <input class="btn btn-secondary btn-lg" type="submit" value="Sign-In" onclick="signinsubmit(this.form)">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="footertab"><!--Footer.html content will load--></div>
+    </div>
+</body>
+</html>

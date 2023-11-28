@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Laxmi's Plaza</title>
+    <!--Included JQuery Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--Included BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Included BootStrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Included Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include style.css Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Included external script file -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="contact_page">
+        <div class="row" id="headertab"><!--Header.html content will load --></div>
+        <!-- div for cover page image -->
+        <div class="row">
+            <div class="contactcoverimg">
+                <div class="content">
+                    <h1>Contact Us</h1>
+                    <p>Send your questions. we are here to answer you.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Block to create contact form  with grids -->
+        <div class="row w-75 my-3" id="contactdiv">
+            <div class="col-sm-6">
+                <img class="img w-100 h-100" src="https://thumbs.dreamstime.com/b/young-girls-teenagers-friends-together-shopping-concept-studio-people-164085125.jpg" alt="shopping">
+            </div>
+            <div class="col-sm-6">
+                <form class="w-100" id="contactform" name="contactform">
+                    <h3 style="text-decoration-line: underline;">Send Us your Message</h3>
+                    <div class="formdata">
+                        <label for="name">Name :</label>
+                        <input class="form-control mt-2" type="text" placeholder="e.g. R Pavani Naidu" name="name">
+                        <span class="errormssg" id="nameerror">Please enter a name</span>
+                    </div>
+                    <div class="formdata">
+                        <label for="email">Email id :</label>
+                        <input class="form-control mt-2" type="email" placeholder="e.g. abc@gmail.com" name="email">
+                        <span class="errormssg" id="emailerror">Please enter a email address</span>
+                    </div>
+                    <div class="formdata">
+                        <label for="contact">Contact :</label>
+                        <input class="form-control mt-2" type="tel" placeholder="e.g. +91 8456247895" name="contact">
+                        <span class="errormssg" id="contacterror">Please enter a contact number</span>
+                    </div>
+                    <div class="formdata">
+                        <label for="message">Message :</label>
+                        <textarea class="form-control mt-2" placeholder="Type your message" name="message"></textarea>
+                        <span class="errormssg" id="messageerror">Enter a message</span>
+                    </div>
+                    <div class="formdata">
+                        <input class="btn btn-secondary mt-2" type="button" value="Submit" onclick="sumbitcontactform(this.form)">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" id="footertab"><!--Footer.html content will load--></div>
+    </div>
+</body>
+</html>
